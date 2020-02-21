@@ -1,4 +1,6 @@
-!/usr/bin/python
+#!/usr/bin/python
+import sys
+import json
 from functools import reduce
 
 def getkeyvalue(dictionary, keys, default=None):
@@ -11,3 +13,7 @@ print (getkeyvalue(object1, key1))
 object2={'x': {'y': {'z': 'a'}}}
 key2="x/y/z"
 print (getkeyvalue(object2, key2))
+
+object3=json.loads(sys.argv[1])
+key3=sys.argv[2]
+print (getkeyvalue(object3,key3))
