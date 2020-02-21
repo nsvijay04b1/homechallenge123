@@ -44,6 +44,7 @@ and `http://ELB_IP/app2` (application later connecting to DB later to fetch no o
 
 
 # Aws architecture used.
+* NAT Gateway is there to download from internet to private subnets which is not mentioned below
 
 ![Aws architecture](images/my-aws-arch.JPG)
 
