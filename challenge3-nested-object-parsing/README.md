@@ -45,3 +45,7 @@ a     # this is the value for example 2 in challenge 3 , object={'x':{'y':{'z':'
 [kube@eaasrt vijay]$ ./nestedObject.py  "{\"9\":{\"2\":{\"3\":\"200\"}}}" "9/2/99"
 None
 ```
+```
+[kube@eaasrt vijay]$ ./nestedObject.py  "{\"a\":{\"b\":{\"c\":\"d\"}}}" "a/b/k"
+None
+```
