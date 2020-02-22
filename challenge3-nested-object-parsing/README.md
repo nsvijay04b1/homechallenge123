@@ -39,3 +39,9 @@ d     # this is the value for example 1 in challenge 3 , object={'a':{'b':{'c':'
 a     # this is the value for example 2 in challenge 3 , object={'x':{'y':{'z':'a'}}},  key =" x/y/z"
 200   # this is  the value for command line parameters passed,  object={'9':{'2':{'3':'200'}}},  key ="9/2/3"
 ```
+
+*  Program returns `none` if value not found
+```
+[kube@eaasrt vijay]$ ./nestedObject.py  "{\"9\":{\"2\":{\"3\":\"200\"}}}" "9/2/99"
+None
+```
